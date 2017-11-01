@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration debug="true"
+	xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- ****************************************************************************************** -->
+	<!-- ============================== -->
+	<!-- Append messages to the console -->
+	<!-- ============================== -->
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="DEBUG, ERROR" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ABSOLUTE} %-5p [%c{1}] %m%n" />
+		</layout>
+	</appender>
+
+	<category name="it.f2informatica.corsojava" additivity="true">
+		<priority value="DEBUG" />
+		<appender-ref ref="AsyncLog" />
+	</category>
+
+	<!-- Definizione del log per le operazioni sul database -->
+
+	<appender name="AsyncLog" class="org.apache.log4j.AsyncAppender">
+		<param name="Threshold" value="DEBUG" />
+		<appender-ref ref="DailyRollingFile" />
+	</appender>
+
+	<appender name="DailyRollingFile" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="./logs/esempi.log" />
+		<param name="Append" value="true" />
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d{dd-MMM-yy HH:mm:ss,SSS}:%X{ClientInfo}:%-5p: %m%n" />
+		</layout>
+	</appender>
+
+	<!-- ****************************************************************************************** -->
+</log4j:configuration>

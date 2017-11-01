@@ -1,0 +1,4 @@
+Dizionario dell'universo di J. R. R. Tolkien;J. R. R. Tolkien;88465281965;2016;Bompiani;Fantasy;16;447;libro;http://books.google.com/books/content?id=ExLmjwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+Crypto;Dan Brown;88046375055;2015;Mondadori;Fiction;32;345;libro;http://books.google.com/books/content?id=6rUcMQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+Io, robot;Isaac Asimov;88204519525;2007;Mondadori;Science Fiction;13;267;libro;http://books.google.com/books/content?id=LLzPAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+Orgoglio e pregiudizio;Jane Austen;88059763173;2004;Giunti Editore;Fiction;6.80;496;libro;http://books.google.com/books/content?id=VoPptgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
